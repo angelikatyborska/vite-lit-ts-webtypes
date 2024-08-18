@@ -4,7 +4,7 @@ This is a dummy app based on `lit-ts`, with web-types generation added.
 
 ## How to set up custom element autocompletion in Webstorm
 
-Webstorm depends on a `web-types.json` file that needs to be provided by the component library to provide autocomplete and documentation.
+Webstorm depends on a [`web-types.json`](https://github.com/JetBrains/web-types) file that needs to be provided by the component library to provide autocomplete and documentation.
 
 1. Add `"web-types": "./web-types.json"` to the library's `package.json`
 2. Install [jpradelle/web-component-analyzer](https://github.com/jpradelle/web-component-analyzer/)
@@ -23,3 +23,15 @@ Webstorm depends on a `web-types.json` file that needs to be provided by the com
       ],
     })
     ```
+5. Also [add JSdoc to your components](https://github.com/runem/web-component-analyzer?tab=readme-ov-file#-how-to-document-your-components-using-jsdoc) for nicer autocomplete
+    ```js
+    /**
+    * @element foo-greeting
+    *
+    * @attr {string} name - The name of the person you'd like say hello to
+    * */
+    ```
+
+### GIF of autocomplete working
+
+![](./docs/autocomplete-demo.gif)

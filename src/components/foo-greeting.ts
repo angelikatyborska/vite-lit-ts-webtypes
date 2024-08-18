@@ -3,7 +3,6 @@ import {customElement, property} from 'lit/decorators.js';
 
 /**
  * @element foo-greeting
- * Umm
  *
  * @attr {string} name - The name of the person you'd like say hello to
  * */
