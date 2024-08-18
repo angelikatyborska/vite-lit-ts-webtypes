@@ -1,0 +1,73 @@
+{
+    "$schema": "http://json.schemastore.org/web-types",
+    "name": "lit-test",
+    "version": "0.0.0",
+    "framework": "lit",
+    "description-markup": "markdown",
+    "contributions": {
+        "html": {
+            "elements": [
+                {
+                    "name": "foo-greeting",
+                    "source": {
+                        "module": "./src/components/foo-greeting.ts",
+                        "symbol": "FooGreeting"
+                    },
+                    "attributes": [
+                        {
+                            "name": "name",
+                            "required": false,
+                            "priority": "normal",
+                            "value": {
+                                "type": "string",
+                                "required": true,
+                                "default": "\"Somebody\""
+                            },
+                            "description": "The name of the person you'd like say hello to",
+                            "source": {
+                                "module": "./src/components/foo-greeting.ts",
+                                "symbol": "FooGreeting.name"
+                            }
+                        }
+                    ],
+                    "js": {
+                        "properties": [
+                            {
+                                "name": "styles",
+                                "required": false,
+                                "priority": "normal",
+                                "value": {
+                                    "type": "CSSResult",
+                                    "required": true,
+                                    "default": "\"css`\\n    p { color: blue }\\n  `\""
+                                },
+                                "source": {
+                                    "module": "./src/components/foo-greeting.ts",
+                                    "symbol": "FooGreeting.styles"
+                                }
+                            },
+                            {
+                                "name": "name",
+                                "required": false,
+                                "priority": "normal",
+                                "value": {
+                                    "type": "string",
+                                    "required": true,
+                                    "default": "\"Somebody\""
+                                },
+                                "description": "The name of the person you'd like say hello to",
+                                "source": {
+                                    "module": "./src/components/foo-greeting.ts",
+                                    "symbol": "FooGreeting.name"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "css": {
+            "properties": []
+        }
+    }
+}
